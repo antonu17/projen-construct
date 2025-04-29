@@ -21,5 +21,9 @@ const project = new awscdk.AwsCdkConstructLibrary({
   release: true,
   licensed: false,
   releaseToNpm: false,
+  publishToPypi: {
+    distName: "construct",
+    module: "construct",
+  },
 });
 project.synth();
