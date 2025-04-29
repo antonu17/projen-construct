@@ -1,5 +1,4 @@
 import { awscdk } from 'projen';
-import { NodePackageManager } from 'projen/lib/javascript/node-package';
 
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Anton Ustyuzhanin',
@@ -26,7 +25,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     distName: 'construct',
     module: 'construct',
   },
-  packageManager: NodePackageManager.NPM,
   publishDryRun: true,
 });
 project.synth();
